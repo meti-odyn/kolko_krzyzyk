@@ -72,14 +72,14 @@ open class Board (val size: Int = 3)
 
     override fun toString(): String {
         var boardString: String = ""
-        var colString: String = "  "
+        var colNameString: String = "  "
         repeat(size) {
             boardString += (it+1).toString() + " "
             boardString += fieldValues[it].joinToString(" | ")
             boardString += " \n"
-            colString += " " + (it+1) + "  "
+            colNameString += " " + (it+1) + "  "
         }
-        boardString = colString + "\n" + boardString
+        boardString = colNameString + "\n" + boardString
         return boardString
     }
 }

@@ -33,9 +33,8 @@ open class Board (val size: Int = 3) {
 
     override fun toString(): String {
         val boardString = buildString {
-            append(" ")
             repeat(size) {
-                append(" ")
+                append("  ")
                 append(it+1)
                 append(" ")
             }

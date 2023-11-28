@@ -1,4 +1,4 @@
-fun kolkoKrzyzyk (player1: String? = null, player2: String? = null) {
+fun PlayKolkoKrzyzyk (player1: String? = null, player2: String? = null) {
     val play = when {
         player1 != null && player2 != null -> Game(player1, player2)
         player1 != null -> Game(player1)
@@ -9,5 +9,5 @@ fun kolkoKrzyzyk (player1: String? = null, player2: String? = null) {
 }
 
 fun main(args: Array<String>) {
-    kolkoKrzyzyk()
+    PlayKolkoKrzyzyk()
 }

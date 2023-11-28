@@ -1,10 +1,9 @@
-class Game (private var player1: String = "Player 1", private var player2: String = "Player 2") {
+class Game (private var player1: String = "Player 1", private var player2: String = "Player 2",
+            sizeOfBoard: Int = 3) {
 
-    private var board = Board(3)
+    private val board = Board(sizeOfBoard)
 
-    constructor(sizeOfBoard: Int) : this(player1 = "Player 1", player2 = "Player") {
-        board = Board(sizeOfBoard)
-    }
+    constructor(boardSize: Int) : this(sizeOfBoard = boardSize)
 
     fun run() {
         while (round(player1,'x') && round(player2, 'o')) {}
